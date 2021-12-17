@@ -74,7 +74,7 @@ export default function CreateDish() {
                                                 <div>
                                                     <input type="text" placeholder="Ví dụ: Cơm sườn" {...field}
                                                         className={
-                                                            "max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
+                                                            "max-w-lg block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
                                                         } />
                                                     {meta.touched && meta.error && (
                                                         <div className="text-sm text-red-500 mt-1">{meta.error}</div>
@@ -99,7 +99,7 @@ export default function CreateDish() {
                                                 <div>
                                                     <textarea rows={3} {...field}
                                                         className={
-                                                            "max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
+                                                            "max-w-lg block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
                                                         }>
 
                                                     </textarea>
@@ -127,7 +127,7 @@ export default function CreateDish() {
                                                 <div>
                                                     <input type="number" placeholder="Ví dụ: 10000" {...field}
                                                         className={
-                                                            "max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
+                                                            "max-w-lg block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
                                                         } />
                                                     {meta.touched && meta.error && (
                                                         <div className="text-sm text-red-500 mt-1">{meta.error}</div>
@@ -143,7 +143,7 @@ export default function CreateDish() {
                                         Phân loại
                                     </label>
                                     <div className="mt-1 sm:mt-0 sm:col-span-2">
-                                        <Field name="category" as="select" className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md">
+                                        <Field name="category" as="select" className="max-w-lg block focus:ring-yellow-500 focus:border-yellow-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md">
                                             {categories.map(c =>
                                                 <option key={c.id} value={c.id}>{c.name}</option>
                                             )}
@@ -167,7 +167,7 @@ export default function CreateDish() {
                                                     <textarea rows={3} {...field}
                                                         placeholder="Ví dụ: https://hinh1.png,https.hinh2.png"
                                                         className={
-                                                            "max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
+                                                            "max-w-lg block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md " + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
                                                         }>
 
                                                     </textarea>
@@ -190,13 +190,13 @@ export default function CreateDish() {
                             <button
                                 type="button"
                                 onClick={() => history.goBack()}
-                                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                             >
                                 Hủy bỏ
                             </button>
                             <button
                                 type="submit"
-                                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                             >
                                 Tạo mới
                             </button>
