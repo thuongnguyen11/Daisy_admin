@@ -19,7 +19,7 @@ export default function CreateCategory() {
     const onSubmit = async (formValue) => {
         await dispatch(createCategory(formValue)).unwrap();
 
-        history.replace('../categories');
+        history.goBack();
     }
 
 

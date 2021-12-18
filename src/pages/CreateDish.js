@@ -16,8 +16,7 @@ export default function CreateDish() {
             .required("Tên không được để trống!"),
         desc: Yup.string()
             .required("Mô tả không được để trống!"),
-        category: Yup.string()
-            .required("Phân loại không được để trống!"),
+        category: Yup.string(),
         price: Yup.number()
             .positive("Giá không được âm!")
             .min(5000, "Giá không được bé hơn 5.000 VND!")
@@ -36,14 +35,14 @@ export default function CreateDish() {
         const dish = {
             name: formValue.name,
             desc: formValue.desc,
-            category: formValue.category,
+            category: formValue.category ? formValue.category : categories[0].id,
             price: formValue.price,
             images: formValue.images.split('\n'),
         }
 
         await dispatch(createDish(dish)).unwrap();
 
-        history.replace('../dishes');
+        history.goBack();
     }
 
     return (
@@ -109,7 +108,7 @@ export default function CreateDish() {
                                                 </div>
                                             )}
                                         </Field>
-                                        <p className="mt-2 text-sm text-gray-500">Mô tả ngắn gọn về phân loại</p>
+                                        <p className="mt-2 text-sm text-gray-500">Mô tả ngắn gọn về món ăn</p>
                                     </div>
                                 </div>
 
