@@ -65,8 +65,8 @@ export default function Login() {
             <div className="h-5/6 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-md">
                     <img
-                        className="mx-auto h-12 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        className="mx-auto h-150 w-auto"
+                        src="https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/264294811_471100497694548_8608598508658194635_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Fk3L_OYJh-sAX_5u02C&_nc_ht=scontent.fsgn8-2.fna&oh=03_AVK28A8qEZvSkljaRA8_lcTaV0BwDkUTpOeM_I5uaOMLXw&oe=61E42807"
                         alt="Workflow"
                     />
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Đăng nhập</h2>
