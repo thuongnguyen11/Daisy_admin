@@ -55,7 +55,7 @@ export default function Layout({ children, ...rest }) {
                             leaveFrom="translate-x-0"
                             leaveTo="-translate-x-full"
                         >
-                            <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-cyan-700">
+                            <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-yellow-700">
                                 <Transition.Child
                                     as={Fragment}
                                     enter="ease-in-out duration-300"
@@ -79,12 +79,12 @@ export default function Layout({ children, ...rest }) {
                                 <div className="flex-shrink-0 flex items-center px-4">
                                     <img
                                         className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/easywire-logo-cyan-300-mark-white-text.svg"
+                                        src="https://tailwindui.com/img/logos/easywire-logo-yellow-300-mark-white-text.svg"
                                         alt="Easywire logo"
                                     />
                                 </div>
                                 <nav
-                                    className="mt-5 flex-shrink-0 h-full divide-y divide-cyan-800 overflow-y-auto"
+                                    className="mt-5 flex-shrink-0 h-full divide-y divide-yellow-800 overflow-y-auto"
                                     aria-label="Sidebar"
                                 >
                                     <div className="px-2 space-y-1">
@@ -94,11 +94,11 @@ export default function Layout({ children, ...rest }) {
                                                 to={item.href}
                                                 exact
                                                 className={classNames(
-                                                    'text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-base font-medium rounded-md'
+                                                    'text-yellow-100 hover:text-white hover:bg-yellow-600 group flex items-center px-2 py-2 text-base font-medium rounded-md'
                                                 )}
-                                                activeClassName='bg-cyan-800 text-white'
+                                                activeClassName='bg-yellow-800 text-white'
                                             >
-                                                <item.icon className="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200" aria-hidden="true" />
+                                                <item.icon className="mr-4 flex-shrink-0 h-6 w-6 text-yellow-200" aria-hidden="true" />
                                                 {item.name}
                                             </NavLink>
                                         ))}
@@ -113,26 +113,26 @@ export default function Layout({ children, ...rest }) {
                 </Transition.Root>
 
                 <div className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0">
-                    <div className="flex flex-col flex-grow bg-cyan-700 pt-5 pb-4 overflow-y-auto">
+                    <div className="flex flex-col flex-grow bg-yellow-500 pt-5 pb-4 overflow-y-auto">
                         <div className="flex items-center flex-shrink-0 px-4">
                             <img
-                                className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/easywire-logo-cyan-300-mark-white-text.svg"
-                                alt="Easywire logo"
+                                className="h-60 w-auto"
+                                src="https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/264294811_471100497694548_8608598508658194635_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Fk3L_OYJh-sAX_5u02C&tn=A7DG3hnwRj6zUZE1&_nc_ht=scontent.fsgn8-2.fna&oh=03_AVJMDJoQk4JHPvgPIjcZGh2UQLnrWnVXhKuexBnspw6eNA&oe=61E42807"
+                                alt="Daisy logo"
                             />
                         </div>
-                        <nav className="mt-5 flex-1 flex flex-col divide-y divide-cyan-800 overflow-y-auto" aria-label="Sidebar">
+                        <nav className="mt-5 flex-1 flex flex-col divide-y divide-yellow-800 overflow-y-auto" aria-label="Sidebar">
                             <div className="px-2 space-y-1">
                                 {navigation.map((item) => (
                                     <NavLink
                                         key={item.name}
                                         to={item.href}
                                         exact
-                                        className={classNames('text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md'
+                                        className={classNames('text-yellow-100 hover:text-white hover:bg-yellow-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md'
                                         )}
-                                        activeClassName='bg-cyan-800 text-white'
+                                        activeClassName='bg-yellow-800 text-white'
                                     >
-                                        <item.icon className="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200" aria-hidden="true" />
+                                        <item.icon className="mr-4 flex-shrink-0 h-6 w-6 text-yellow-200" aria-hidden="true" />
                                         {item.name}
                                     </NavLink>
                                 ))}
@@ -145,7 +145,7 @@ export default function Layout({ children, ...rest }) {
                     <div className="relative z-10 flex-shrink-0 flex h-16 bg-white border-b border-gray-200 lg:border-none">
                         <button
                             type="button"
-                            className="px-4 border-r border-gray-200 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 lg:hidden"
+                            className="px-4 border-r border-gray-200 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500 lg:hidden"
                             onClick={() => setSidebarOpen(true)}
                         >
                             <span className="sr-only">Open sidebar</span>
@@ -155,7 +155,7 @@ export default function Layout({ children, ...rest }) {
                             <div className="ml-4 flex items-center md:ml-6">
                                 <Menu as="div" className="ml-3 relative">
                                     <div>
-                                        <Menu.Button className="max-w-xs bg-white rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 lg:p-2 lg:rounded-md lg:hover:bg-gray-50">
+                                        <Menu.Button className="max-w-xs bg-white rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 lg:p-2 lg:rounded-md lg:hover:bg-gray-50">
                                             <img
                                                 className="h-8 w-8 rounded-full"
                                                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
