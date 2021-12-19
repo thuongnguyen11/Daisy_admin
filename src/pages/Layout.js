@@ -113,11 +113,11 @@ export default function Layout({ children, ...rest }) {
                 </Transition.Root>
 
                 <div className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0">
-                    <div className="flex flex-col flex-grow bg-yellow-500 pt-5 pb-4 overflow-y-auto">
+                    <div className="flex flex-col flex-grow bg-yellow-400 pt-5 pb-4 overflow-y-auto">
                         <div className="flex items-center flex-shrink-0 px-4">
                             <img
                                 className="h-60 w-auto"
-                                src="https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/264294811_471100497694548_8608598508658194635_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Fk3L_OYJh-sAX_5u02C&tn=A7DG3hnwRj6zUZE1&_nc_ht=scontent.fsgn8-2.fna&oh=03_AVJMDJoQk4JHPvgPIjcZGh2UQLnrWnVXhKuexBnspw6eNA&oe=61E42807"
+                                src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.15752-9/264677970_656200175546138_2646451019225234887_n.png?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=e4tkzDVSSAMAX_bH9Zi&tn=A7DG3hnwRj6zUZE1&_nc_ht=scontent.fsgn3-1.fna&oh=03_AVIUGVMO3fHYKqM-pLNtnSSwnwzPPhSNUNfvogllqtjeGQ&oe=61E3BF62"
                                 alt="Daisy logo"
                             />
                         </div>
