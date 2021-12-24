@@ -78,9 +78,9 @@ export default function Layout({ children, ...rest }) {
                                 </Transition.Child>
                                 <div className="flex-shrink-0 flex items-center px-4">
                                     <img
-                                        className="h-8 w-auto"
+                                        className="h-6 w-auto"
                                         src="https://tailwindui.com/img/logos/easywire-logo-yellow-300-mark-white-text.svg"
-                                        alt="Easywire logo"
+                                        alt="Daisy logo"
                                     />
                                 </div>
                                 <nav

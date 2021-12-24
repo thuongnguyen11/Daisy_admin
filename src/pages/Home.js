@@ -71,7 +71,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-gray-50 px-5 py-3">
+                                <div className="bg-gray-56 px-5 py-3">
                                     <div className="text-sm">
                                         <a className="font-medium text-cyan-700 hover:text-cyan-900">
                                            
