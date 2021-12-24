@@ -95,7 +95,7 @@ export default function Login() {
                                             <div>
                                                 <input type="text" placeholder="Số điện thoại của bạn" {...field}
                                                     className={
-                                                        "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
+                                                        "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm" + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
                                                     } />
                                                 {meta.touched && meta.error && (
                                                     <div className="text-sm text-red-500 mt-1">{meta.error}</div>
@@ -119,7 +119,7 @@ export default function Login() {
                                             <div>
                                                 <input type="password" placeholder="Mật khẩu" {...field}
                                                     className={
-                                                        "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
+                                                        "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm" + (meta.touched && meta.error ? 'border-2 border-red-500' : '')
                                                     } />
                                                 {meta.touched && meta.error && (
                                                     <div className="text-sm text-red-500 mt-1">{meta.error}</div>
